@@ -1,2 +1,24 @@
 # qiankun-ceshi
-本项目仅本人为了测试乾坤框架和三大前端框架整合使用，未经过本人允许不得用于其他用途
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
