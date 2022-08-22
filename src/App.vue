@@ -51,6 +51,7 @@ export default {
   components: {},
   methods: {
     goto (item) {
+      console.log(item)
       history.pushState(null, item.activeRule, item.activeRule)
       // this.current = item.name
     },
@@ -93,24 +94,41 @@ export default {
 
 
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html, body{
+  margin: 0 !important;
+  padding: 0;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+  .layout-wrapper{
+    .layout-header{
+      height: 50px;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      line-height: 50px;
+      position: relative;
+     .logo {
+        float: left;
+        margin: 0 50px;
+      }
+      .sub-apps {
+        list-style: none;
+        margin: 0;
+        li{
+          list-style: none;
+          display: inline-block;
+          padding: 0 20px;
+          cursor: pointer;
+          &.active{
+            color: #42b983;
+            text-decoration: underline;
+          }
+        }
+      }
+      .userinfo{
+        position: absolute;
+        right: 100px;
+        top: 0;
+      }
     }
   }
-}
 </style>
