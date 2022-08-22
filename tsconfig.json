@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "experimentalDecorators": true,
+    "target": "esnext",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
@@ -10,6 +11,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "noImplicitAny": false,
     "baseUrl": ".",
     "types": [
       "webpack-env"
@@ -17,6 +19,15 @@
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "@u": [
+        "src/template/user/*"
+      ],
+      "@e": [
+        "src/template/engineer/*"
+      ],
+      "_assets": [
+        "src/assets/*"
       ]
     },
     "lib": [
@@ -31,7 +42,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
   ],
   "exclude": [
     "node_modules"

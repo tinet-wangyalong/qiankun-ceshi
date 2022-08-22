@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "nprogress": "^0.2.0",
     "qiankun": "^2.7.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
