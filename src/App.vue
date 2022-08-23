@@ -82,6 +82,7 @@ export default {
   created () {
     this.bindCurrent()
     NProgress.start()
+    console.log(process.env)
   },
   mounted () {
     this.listenRouterChange()
